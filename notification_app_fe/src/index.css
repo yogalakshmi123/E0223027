@@ -1,0 +1,88 @@
+/* frontend/src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Dashboard Container Card */
+.max-w-3xl {
+  max-width: 48rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f1f5f9;
+}
+
+/* Header Elements */
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mt-2 { margin-top: 0.5rem; }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Category Filter Buttons */
+.flex.gap-2 button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f1f5f9;
+  color: #475569;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.flex.gap-2 button:hover {
+  background-color: #e2e8f0;
+}
+
+/* Style for Active Selected Filter Button */
+.flex.gap-2 button[style*="background"] {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+/* Notification Feed Items */
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.border.rounded-xl {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: white;
+  transition: box-shadow 0.2s;
+}
+
+.border.rounded-xl:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Pill Badges */
+.text-xs { font-size: 0.75rem; }
+.font-bold { font-weight: 700; }
+.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+.py-0.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+.rounded { border-radius: 0.25rem; }
+.uppercase { text-transform: uppercase; }
+
+.bg-purple-100 { background-color: #f3e8ff; color: #6b21a8; }
+.bg-green-100 { background-color: #dcfce7; color: #166534; }
+.bg-blue-100 { background-color: #dbeafe; color: #1e40af; }
+.text-gray-400 { color: #94a3b8; }
